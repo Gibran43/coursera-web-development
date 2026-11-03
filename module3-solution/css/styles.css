@@ -1,54 +1,115 @@
 
-/* Tampilan dasar halaman */
+/* =========================================
+   1. TAMPILAN DASAR HALAMAN
+========================================= */
+
 body {
     font-size: 16px;
     background-color: white;
 }
 
-/* Navbar */
-.navbar {
-    background-color: #999999;
+
+/* =========================================
+   2. NAVBAR
+========================================= */
+
+.navbar-default {
+    background-color: #999999 !important;
+    background-image: none !important;
+    border: none !important;
     border-radius: 0;
-    border: 0;
     margin-bottom: 20px;
+    box-shadow: none !important;
 }
 
 /* Nama perusahaan */
-.navbar-brand {
+.navbar-default .navbar-brand {
     font-size: 25px;
     font-weight: bold;
     color: black !important;
 }
 
-/* Tombol hamburger */
-.navbar-toggle {
-    border: 2px solid black;
+/* Efek hover nama perusahaan */
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: black !important;
 }
 
-/* Menu dropdown mobile */
+/* Tombol hamburger */
+.navbar-default .navbar-toggle {
+    border: 2px solid black;
+    background-color: transparent;
+}
+
+/* Garis hamburger */
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: black !important;
+}
+
+/* Efek hover tombol hamburger */
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #777777 !important;
+}
+
+/* Tampilan area dropdown */
+.navbar-default .navbar-collapse {
+    border-color: #777777;
+    box-shadow: none;
+}
+
+
+/* =========================================
+   3. MENU DROPDOWN MOBILE
+========================================= */
+
 #mobile-menu {
     background-color: white;
+    background-image: none;
     border-top: 2px solid black;
     padding: 0;
 }
 
+/* Daftar menu */
 #mobile-menu ul {
     margin: 0;
     width: 100%;
 }
 
+/* Item menu */
 #mobile-menu li {
     text-align: center;
     border-bottom: 1px solid black;
 }
 
-/* Judul halaman */
+/* Link menu */
+#mobile-menu li a {
+    color: black;
+    font-size: 18px;
+}
+
+/* Efek hover menu */
+#mobile-menu li a:hover,
+#mobile-menu li a:focus {
+    background-color: #dddddd;
+    color: black;
+}
+
+
+/* =========================================
+   4. JUDUL HALAMAN
+========================================= */
+
 h1 {
     margin-bottom: 40px;
     font-weight: bold;
 }
 
-/* Section menu */
+
+/* =========================================
+   5. SECTION CHICKEN
+========================================= */
+
 .menu-section {
     background-color: #999999;
     padding: 10px 20px;
@@ -56,11 +117,49 @@ h1 {
     min-height: 1000px;
 }
 
+/* Judul section */
 .menu-section h3 {
     font-weight: bold;
     margin-top: 0;
 }
 
+/* Paragraf section */
 .menu-section p {
     font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   6. RESPONSIVE DESIGN
+========================================= */
+
+/* Tampilan mobile */
+@media (max-width: 767px) {
+
+    .navbar-header {
+        min-height: 60px;
+    }
+
+    .navbar-brand {
+        font-size: 25px !important;
+    }
+
+    .menu-section {
+        padding: 10px 20px;
+    }
+
+}
+
+/* Tampilan tablet dan desktop */
+@media (min-width: 768px) {
+
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-brand {
+        font-size: 25px;
+    }
+
 }
