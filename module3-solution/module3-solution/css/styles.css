@@ -1,0 +1,66 @@
+
+/* Tampilan dasar halaman */
+body {
+    font-size: 16px;
+    background-color: white;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #999999;
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 20px;
+}
+
+/* Nama perusahaan */
+.navbar-brand {
+    font-size: 25px;
+    font-weight: bold;
+    color: black !important;
+}
+
+/* Tombol hamburger */
+.navbar-toggle {
+    border: 2px solid black;
+}
+
+/* Menu dropdown mobile */
+#mobile-menu {
+    background-color: white;
+    border-top: 2px solid black;
+    padding: 0;
+}
+
+#mobile-menu ul {
+    margin: 0;
+    width: 100%;
+}
+
+#mobile-menu li {
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+/* Judul halaman */
+h1 {
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+/* Section menu */
+.menu-section {
+    background-color: #999999;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    min-height: 1000px;
+}
+
+.menu-section h3 {
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.menu-section p {
+    font-size: 16px;
+}
